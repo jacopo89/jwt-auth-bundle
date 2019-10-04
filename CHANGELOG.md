@@ -1,28 +1,5 @@
 # Change Log
 
-## [3.2.0](https://github.com/auth0/jwt-auth-bundle/tree/3.2.0) (2019-09-26)
-[Full Changelog](https://github.com/auth0/jwt-auth-bundle/compare/3.1.0...3.2.0)
-
-**Added**
-- GuardAuthenticator implementation for Symfony 2.8 and later [\#75](https://github.com/auth0/jwt-auth-bundle/pull/75) ([niels-nijens](https://github.com/niels-nijens))
-
-## [3.1.0](https://github.com/auth0/jwt-auth-bundle/tree/3.1.0) (2018-07-12)
-[Full Changelog](https://github.com/auth0/jwt-auth-bundle/compare/3.0.2...3.1.0)
-
-**Closed issues**
-- Support Symfony4 [\#55](https://github.com/auth0/jwt-auth-bundle/issues/55)
-- Allow multiple audiences in config [\#54](https://github.com/auth0/jwt-auth-bundle/issues/54)
-
-**Added**
-- Add multiple audiences capability to JWT verification [\#57](https://github.com/auth0/jwt-auth-bundle/pull/57) ([joshcanhelp](https://github.com/joshcanhelp))
-- Allow symfony/framework-bundle 4.x [\#56](https://github.com/auth0/jwt-auth-bundle/pull/56) ([ricbra](https://github.com/ricbra))
-
-## [3.0.2](https://github.com/auth0/jwt-auth-bundle/tree/3.0.2) (2017-07-19)
-[Full Changelog](https://github.com/auth0/jwt-auth-bundle/compare/2.0.0...3.0.2)
-
-**Added**
-- Added support for cache [\#51](https://github.com/auth0/jwt-auth-bundle/pull/51) ([Nyholm](https://github.com/Nyholm))
-
 ## [2.0.0](https://github.com/auth0/jwt-auth-bundle/tree/2.0.0) (2016-01-29)
 [Full Changelog](https://github.com/auth0/jwt-auth-bundle/compare/1.2.8...2.0.0)
 

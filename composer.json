@@ -1,7 +1,7 @@
 {
     "name":        "auth0/jwt-auth-bundle",
     "type":        "symfony-bundle",
-    "description": "Support for authenticating users with a JWT in Symfony.",
+    "description": "Support for authenticating users JWT.",
     "keywords":    [
         "authentication",
         "firewall",
@@ -15,35 +15,31 @@
     "authors": [
         {
             "name": "Germán Lena",
-            "email": "german@auth0.com"
-        },
+            "email": "german.lena@gmail.com"
+        }
+    ],
+    "repositories": [
         {
-            "name": "Josh Cunningham",
-            "email": "josh.cunningham@auth0.com"
+            "type": "vcs",
+            "url": "https://github.com/jacopo89/auth0-PHP.git"
         }
     ],
 
     "require": {
-        "php": "^5.5 || ^7.0",
-        "symfony/framework-bundle": "^2.8 || ~3.0 || ~4.0",
-        "auth0/auth0-php": "^5.2"
+        "php": ">=5.3.3",
+        "symfony/symfony": "~3.0"
     },
 
     "require-dev": {
-        "phpunit/phpunit": "^4.8.36 || ^5.7.21",
-        "nyholm/symfony-bundle-test": "^1.0.2",
-        "symfony/framework-bundle": "^2.8 || ~3.3.0",
-        "symfony/security": "^2.8 || ~3.3.0"
+        "phpunit/phpunit": "^5.1"
+    },
+
+    "suggest": {
     },
 
     "autoload": {
         "psr-4": {
             "Auth0\\JWTAuthBundle\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Auth0\\JWTAuthBundle\\": "Tests/"
         }
     }
 }

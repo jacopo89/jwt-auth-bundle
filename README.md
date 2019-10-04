@@ -1,38 +1,47 @@
-[![CircleCI](https://circleci.com/gh/auth0/jwt-auth-bundle.svg?style=svg)](https://circleci.com/gh/auth0/jwt-auth-bundle)
-
 # jwt-auth-bundle
 
 JWT Authentication bundle for Symfony
 
-## Requirements
+## Important
 
-- [PHP](http://php.net/) 5.5+
-- [Symfony](https://symfony.com/) 2.8+
-- [Auth0 PHP](https://github.com/auth0/auth0-PHP) 5.0+
+v2.x.x provides compatibility with Symfony 3
 
-> For Symfony < 2.8 please see [v1](https://github.com/auth0/jwt-auth-bundle/tree/1.x.x-dev)
+for Symfony 2.x, stick to v1 branch
+
+##Demo
+
+Check the usage demo: https://github.com/auth0/jwt-auth-bundle/tree/master/example
 
 ## Installation
 
-To install the dependency, run the following:
+Check our docs page to get a complete guide on how to install it in an existing project or download a pre configured seedproject: https://auth0.com/docs/quickstart/backend/php-symfony/
 
-```bash
-composer require auth0/jwt-auth-bundle:"~3.0"
-```
+If you are looking for a webapp integration, check this doc: https://auth0.com/docs/quickstart/webapp/symfony/
 
-> For more information about Composer usage, check [their official documentation](https://getcomposer.org/doc/00-intro.md).
+> If you find something wrong in our docs, PR are welcome in our docs repo: https://github.com/auth0/docs
 
-## Resources
 
-Check out the [Symfony API QuickStart Guide](https://auth0.com/docs/quickstart/backend/symfony) to find out more about integrating the bunlde into an existing project or download a pre-configured project.
+##News
 
-## Demo
+###Version 1.2 release
 
-[Symfony API Samples](https://github.com/auth0-community/auth0-symfony-api-samples)
+- PSR-4 compliance
+- Support for API v2 & auth0-php 1.0
 
-## Auth0 integration
+#### BC breaks
 
-The Auth0 PHP SDK is used to decode the JWT and if you are woking with Auth0 you can inject to your `UserProvider` to get the user profile, [example code](https://github.com/auth0-community/auth0-symfony-api-samples/blob/master/01-Authorization-RS256/src/AppBundle/Security/A0UserProvider.php).
+- Config
+    - package name space changed to `jwt_auth`
+    - added optional `secret_base64_encoded` field
+- Removed dependency with Auth0. Now you can use non base64 tokens.
+- The profile data is not longer a `stdClass`, is an asociative array.
+- There are some BC issues related to the auth0-php changes. We recomment to read the [auth0-php README](https://github.com/auth0/Auth0-PHP).
+
+#### Auth0 integration
+
+This package has built in Auth0 integration (as you can check on the example) but is not mandatory. You can use this package to authenticate other JWT.
+
+The auth-php SDK is used to decode the JWT and if you are woking with Auth0 you can inject to your `UserProvider` to get the user profile (as you can check on the [example](https://github.com/auth0/jwt-auth-bundle/blob/master/example/src/AppBundle/Security/A0UserProvider.php)).
 
 ## Issue Reporting
 

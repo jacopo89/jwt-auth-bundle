@@ -25,19 +25,9 @@ class Configuration implements ConfigurationInterface
             ->scalarNode('api_secret')->defaultValue('')->end()
             ->scalarNode('domain')->defaultValue('')->end()
             ->scalarNode('api_identifier')->defaultValue('')->end()
-            ->scalarNode('api_client_id')->defaultValue('')->end()
-            ->arrayNode('api_identifier_array')
-                ->prototype('scalar')->end()
-            ->end()
             ->scalarNode('authorized_issuer')->defaultValue('')->end()
-            ->arrayNode('supported_algs')
-                ->addDefaultChildrenIfNoneSet(1)
-                ->prototype('scalar')
-                ->defaultValue('RS256')
-                ->end()
-            ->end()
-            ->scalarNode('secret_base64_encoded')->defaultValue(false)->end()
-            ->scalarNode('cache')->defaultNull()->info('The cache service you want to use. Example "jwt_auth.cache.file_system".')->end();
+            ->scalarNode('supported_algs')->defaultValue(['RS256'])->end()
+            ->scalarNode('secret_base64_encoded')->defaultValue(false)->end();
 
         return $treeBuilder;
     }
