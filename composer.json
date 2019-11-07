@@ -1,5 +1,5 @@
 {
-    "name":        "jacopo89/jwt-auth-bundle",
+    "name":        "auth0/jwt-auth-bundle",
     "type":        "symfony-bundle",
     "description": "Support for authenticating users JWT.",
     "keywords":    [
