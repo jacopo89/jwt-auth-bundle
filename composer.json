@@ -28,7 +28,7 @@
     "require": {
         "php": ">=5.3.3",
         "symfony/symfony": "~3.0",
-        "auth0/auth0-PHP": "dev-master"
+        "jacopo89/auth0-PHP": "dev-master"
     },
 
     "require-dev": {
