@@ -1,5 +1,5 @@
 {
-    "name":        "auth0/jwt-auth-bundle",
+    "name":        "jacopo89/jwt-auth-bundle",
     "type":        "symfony-bundle",
     "description": "Support for authenticating users JWT.",
     "keywords":    [
@@ -9,7 +9,7 @@
         "security",
         "auth0"
     ],
-    "homepage": "http://github.com/auth0/jwt-auth-bundle",
+    "homepage": "http://github.com/jacopo89/jwt-auth-bundle",
     "license": "MIT",
 
     "authors": [
